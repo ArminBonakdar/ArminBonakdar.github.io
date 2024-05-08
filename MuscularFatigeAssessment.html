@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<style>
+
+
+
+
+#main > section.one {
+
+				background-color: #81918E;
+				display: flex;
+				flex-direction: column;
+				background-image: url("images/exoskeleton2.jpg");
+				justify-content: center;
+				text-align: center;
+				height: 35vh;
+			}
+
+			p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+
+#header #logo {
+    text-align: center;
+}
+
+#header #logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* Add the following CSS to center the banner itself if it's not centered by default */
+#header {
+    text-align: center;
+}
+
+
+</style>
+
+
+
+<html>
+	<head>
+		<title>Research title</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<img src="ProfilePic.jpg" alt="Armin Bonakdar's Profile Picture">
+							<h1 id="title">Armin Bonakdar</h1>
+							<p2>Mechanical Engineer</p2>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Homepage</span></a></li>
+								<li><a href="index.html#wrapper1" id="portfolio-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="index.html#wrapper2" id="about-link"><span class="icon solid fa-th">Professional Experiences</span></a></li>
+								<li><a href="index.html#wrapper3" id="Publications"><span class="icon solid fa-th">Publications</span></a></li>
+								<li><a href="index.html#wrapper4" id="contact-link"><span class="icon solid fa-envelope">Contact Me</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/armin-bonakdar/" target="_blank" class="linkedin-logo">
+								<img style="width: 40px;"   src="linkedin.png" alt="LinkedIn Logo"></a></li>
+							<li><a href="https://github.com/ArminBonakdar" target="_blank" class="github-logo">
+								<img style="width: 40px;" src="github.png" alt="GitHub Logo"></a></li>
+							<li><a href="https://scholar.google.com/citations?user=eKftyMEAAAAJ&hl=en" target="_blank" class="scholar-logo">
+								<img style="width: 40px;" src="scholar.png" alt="Scholar Logo"></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="objective">
+
+							<header>
+								<h2 class="alt">Fatigue Assessment Using Body Joint Angles</a></h2>
+							</header>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+				<section id="about" class="three">
+					<div class="container">
+
+						<header>
+							<h2>Authors</h2>
+						</header>
+						<h4>Armin Bonakdar, Karla Beltran Martinez, Ali Golabchi, Hossein Rouhani, Mahdi Tavakoli</h4>
+
+					</div>
+				</section>
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Abstract</h2>
+							</header>
+
+							<p>Predicting fatigue in material handling tasks is crucial to prevent work-related injuries and enhance worker safety [1]. 
+								Fatigue affects movement coordination, which can be identified using inertial measurement units (IMUs) found in smart devices [2]. 
+								This study utilizes machine learning approaches to detect muscle fatigue by analyzing IMU recordings. </p>
+
+							<h2>Methods</h2>
+						    </header>
+
+						<p>A study was conducted with seven able-bodied male participants (age: 24 ± 2). 9 IMUs (MTws, XSENS Technologies, NL) were used to calculate right knee, elbow, trunk, shoulder, 
+							and neck angles during a repetitive material handling task that included lifting a 16 lbs. box between two tables of different heights until the participant declares the Borg 
+							Rating of Perceived Exertion (RPE) scale of 9 out 10. Extracted features included the maximum, minimum, and average joint angles per repetition. Initial repetitions were 
+							used as no-fatigue references, while a portion of the end cycles represented the fatigue state. The aforementioned features and their associated labels were employed in various machine learning 
+							algorithms (ML), such as Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Random Forest Classifier (RFC), Deep Feedforward Neural Network (DFNN), and Tabular Learning (TabNet). 
+							The objective was to evaluate the robustness of the extracted IMU-recorded features in fatigue detection. 
+							Furthermore, the RFC algorithm was utilized to determine the features’ importance and compare their impact on fatigue detection.</p>
+						
+							
+
+						<h2>Results and Conclusion</h2>
+					</header>
+
+					<p>IMUs' extracted features were highly effective for fatigue detection, with RFC achieving 93.45% predictive accuracy and DFNN closely following at 91.58% (Table 1). 
+						In addition, the RFC findings indicate that average and maximum angles hold greater significance in fatigue detection compared to the minimum angle (Figure 1).
+						This study highlights that IMU-recorded features such as maximum, minimum, and average angles from joint angles were efficient for fatigue prediction during manual handling tasks. 
+						The accuracy of the results suggests that IMUs can be used for fatigue detection in a workplace setting.
+						</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ML1.jpg" alt="" /></a>
+										<header>
+											<h3>Feature importance scores with RFC method: unraveling key features for fatigue detection</h3>
+										</header>
+									</article>
+
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ML2.jpg" alt="" /></a>
+										<header>
+											<h3>ML algorithms’ outcomes for fatigue detection</h3>
+										</header>
+
+
+							</div>
+
+						</div>
+					</section>
+
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p>[1] Baghdadi, A., Megahed, F.M., Esfahani, E.T. and Cavuoto, L.A., 2018. A machine learning approach to detect changes in gait parameters following a fatiguing occupational task. Ergonomics, 61(8), pp.1116-1129.</p>
+							<p>[2] Jiang, Y., Hernandez, V., Venture, G., Kulić, D. and K. Chen, B., 2021. A data-driven approach to predict fatigue in exercise based on motion data from wearable sensors or force plate. Sensors, 21(4), p.1499.</p>
+
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
