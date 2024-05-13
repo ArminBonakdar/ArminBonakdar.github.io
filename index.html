@@ -47,6 +47,24 @@
 	border-radius: 50%;
 }
 
+#custom-header .container {
+    position: relative; /* Add this to make z-index work */
+    z-index: 1; /* Set a higher z-index than the video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container fills the height of the header */
+}
+
+#custom-header .container img {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Make the image circular */
+}
+
+
 #footer {
     background-color: #808080; /* Set your desired background color */
     /* Other styles for the footer */
@@ -62,10 +80,10 @@
 		</video>
 		<div class="container"> 
 			<section class="12u">
-				<img src="images/albertalogo.png" alt="Education Image 1" width="130" height="130">
+				<img src="ProfilePic.jpg" alt="profile pic" width="130" height="130">
 				<h2><strong>Armin Bonakdar</strong></h2>
 				<p><strong>MSc in Mechanical Engineering, University of Alberta</strong></p>
-			</section>
+
 		</div>
 	</div>
 	
